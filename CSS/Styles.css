@@ -1,98 +1,122 @@
-body{
-  font-family: 'Baloo Tammudu 2', cursive;
-  position: relative;
+body {
+    font-family: 'Baloo Tammudu 2', cursive;
+    position: relative;
 }
-h1{
-  color: #f7f7f7;
-}
-p{
+
+h1 {
     color: #f7f7f7;
 }
-label{
-  color: #ffffff;
 
+p {
+    color: #f7f7f7;
 }
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
+
+label {
+    color: #ffffff;
 }
-.container div{
-  margin: 10px;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
 }
-.container div label{
-  cursor: pointer;
+
+.container div {
+    margin: 10px;
 }
-.container div label input[type="checkbox"]
-{
-  display: none;
+
+.container div label {
+    cursor: pointer;
 }
-.container div label span{
-  position: relative;
-  display: flex;
-  background: #b030b0;
-  padding: 1px 15px;
-  color: #f7f7f7;
-  text-shadow: 0 1px 4px #f7f7f7;
-  border-radius: 30px;
-  font-size: 15px;
-  transition: 0.5s;
-  user-select: none;
-  overflow: hidden;
+
+.container div label input[type="checkbox"] {
+    display: none;
 }
-.container div label span :before{
-  content: '';
-  position: absolute;
-  background: #7952b3;
+
+.container div label span {
+    position: relative;
+    display: flex;
+    background: #b030b0;
+    padding: 1px 15px;
+    color: #f7f7f7;
+    text-shadow: 0 1px 4px #f7f7f7;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
 }
-.container div label input[type="checkbox"]:checked ~ span
-{
-  background: #602080;
-  text-shadow: #af0404;
+
+.container div label span :before {
+    content: '';
+    position: absolute;
+    background: #7952b3;
 }
-.form{
-  background-color: rgba(0,0,0,0.5);
-  border: 1px solid #dddddd;
-  position: relative;
-  margin: 10% 5px 10% 49%;
-  padding: 10px 10px 10px;
+
+.container div label input[type="checkbox"]:checked~span {
+    background: #602080;
+    text-shadow: #af0404;
 }
-video{
-  position:fixed;
-  z-index: -1;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
+
+.form {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #dddddd;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* margin: 10% 5px 10% 49%; */
+    /* padding: 10px 10px 10px; */
 }
-.header{
-  text-align: center;
-  padding: 10px 0 10px;
-  background-color: rgba(0,0,0,0.5);
-  border: 1px solid #dddddd;
+
+input {
+    border-radius: 8px;
+    margin: 5px;
 }
-.header-link{
-  padding: 10px;
-  margin: 10px 20px;
-  text-decoration: none;
+
+video {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
 }
-.header-link:hover{
-  color: #3D84B8;
+
+.header {
+    text-align: center;
+    padding: 10px 0 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #dddddd;
 }
-a{
-  color: #f7f7f7;
+
+.header-link {
+    padding: 10px;
+    margin: 10px 20px;
+    text-decoration: none;
 }
-.footer{
-  text-align: center;
-  padding: 10px 0 10px;
-  background-color: rgba(0,0,0,0.5);
-  border: 1px solid #dddddd;
+
+.header-link:hover {
+    color: #3D84B8;
 }
-.footer-link{
-  padding: 10px;
-  margin: 10px 20px;
-  text-decoration: none;
+
+a {
+    color: #f7f7f7;
 }
-.footer-link:hover{
-  color: #3D84B8;
+
+.footer {
+    text-align: center;
+    padding: 10px 0 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #dddddd;
+}
+
+.footer-link {
+    padding: 10px;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #3D84B8;
 }
